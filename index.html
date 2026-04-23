@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalyex — Scale. Strategy. Results.</title>
+  <meta name="description" content="Scalyex is a growth-focused marketing agency in Gurugram combining data-driven strategy, high-converting content, and performance-led execution for real business growth." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23E01010'/><text x='6' y='24' font-family='sans-serif' font-weight='700' font-size='22' fill='white'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-bar" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo-link" aria-label="Scalyex - Home"><img src="assets/logo-light.png" alt="Scalyex" class="nav__logo-img" /></a>
+
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="case-studies.html">Work</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="contact.html#contact-form" class="btn btn-primary">Book a Call</a>
+    </div>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="case-studies.html">Work</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="blog.html">Blog</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__bg-grid" aria-hidden="true"></div>
+  <div class="hero__bg-dot" aria-hidden="true"></div>
+
+  <!-- Floating shapes for mouse parallax -->
+  <div class="hero-shape hero-shape-1 mouse-float" data-depth="0.3" aria-hidden="true"></div>
+  <div class="hero-shape hero-shape-2 mouse-float" data-depth="0.6" aria-hidden="true"></div>
+  <div class="hero-shape hero-shape-3 mouse-float" data-depth="0.9" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal fade-up">
+        <div class="hero__eyebrow-line"></div>
+        <span class="label-accent">Growth Marketing Agency · Gurugram</span>
+      </div>
+
+      <h1 class="display-xl hero__title">
+        <span data-split class="reveal fade-up delay-1">We Scale Brands That</span><br>
+        <em data-split class="reveal fade-up delay-2">Mean Business.</em>
+      </h1>
+
+      <p class="hero__subtitle reveal fade-up delay-3">
+        Data-driven strategies, high-converting content, and performance-led execution — built for brands that want real, measurable growth.
+      </p>
+
+      <div class="hero__actions reveal fade-up delay-4">
+        <a href="contact.html#contact-form" class="btn btn-primary btn-lg">Book a Call</a>
+        <a href="services.html" class="btn btn-secondary btn-lg">Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ MARQUEE ═══════════════════════════════ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- Duplicated for infinite loop -->
+    <span class="marquee-item">Digital Marketing Strategy</span>
+    <span class="marquee-item">Social Media Management</span>
+    <span class="marquee-item">Content Creation & Reels</span>
+    <span class="marquee-item">Performance Marketing</span>
+    <span class="marquee-item">Branding & Visual Identity</span>
+    <span class="marquee-item">Website Design & Optimisation</span>
+    <span class="marquee-item">Digital Marketing Strategy</span>
+    <span class="marquee-item">Social Media Management</span>
+    <span class="marquee-item">Content Creation & Reels</span>
+    <span class="marquee-item">Performance Marketing</span>
+    <span class="marquee-item">Branding & Visual Identity</span>
+    <span class="marquee-item">Website Design & Optimisation</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header reveal fade-up">
+      <span class="label-accent">What We Do</span>
+      <h2 class="display-md" style="margin-top:var(--space-md)">Services Built for Scale</h2>
+      <div class="divider-accent"></div>
+      <p class="text-md" style="color:var(--text-secondary);max-width:520px">Every service is engineered around one goal — measurable business growth.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Service 1 -->
+      <div class="service-card reveal fade-up delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Digital Marketing Strategy</h3>
+        <p>Data-driven growth strategies aligned with business objectives and audience behaviour.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card reveal fade-up delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Social Media Management</h3>
+        <p>End-to-end content planning, publishing, optimisation, and performance tracking.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card reveal fade-up delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <h3>Content Creation & Reels</h3>
+        <p>High-impact short-form video content designed to capture attention and drive conversions.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card reveal fade-up delay-1">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Performance Marketing</h3>
+        <p>ROI-focused advertising campaigns across social and search platforms.</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card reveal fade-up delay-2">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        </div>
+        <h3>Branding & Visual Identity</h3>
+        <p>Modern, consistent brand systems including logo usage, creatives, and design guidelines.</p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card reveal fade-up delay-3">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Website Design & Optimisation</h3>
+        <p>Fast, responsive, conversion-focused websites with modern UI/UX standards.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <a href="services.html" class="btn btn-secondary">View All Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ STATS ═══════════════════════════════ -->
+<section class="section bg-secondary" id="stats">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:var(--space-4xl)">
+
+      <div class="reveal fade-left">
+        <span class="label-accent">About Scalyex</span>
+        <h2 class="display-md" style="margin-top:var(--space-md);margin-bottom:var(--space-lg)">
+          Intelligent Strategy.<br>Clean Execution.<br><em style="font-style:normal;color:var(--accent)">Real Results.</em>
+        </h2>
+        <p style="color:var(--text-secondary);line-height:1.8;max-width:460px">
+          Scalyex is a founder-led growth agency built in Gurugram. We believe marketing should move the business forward — not just look good. Every decision we make is backed by data and driven by outcomes.
+        </p>
+        <div class="divider-accent"></div>
+        <a href="case-studies.html" class="btn btn-ghost">See Our Work →</a>
+      </div>
+
+      <div>
+        <div class="grid-2" style="gap:var(--space-xl)">
+          <div class="stat-card reveal fade-up delay-1">
+            <div class="stat-card__number">
+              <span class="count-num" data-count="50" data-suffix="+">0+</span>
+            </div>
+            <div class="stat-card__label">Campaigns Executed</div>
+          </div>
+          <div class="stat-card reveal fade-up delay-2">
+            <div class="stat-card__number">
+              <span class="count-num" data-count="3" data-suffix="x">0x</span>
+            </div>
+            <div class="stat-card__label">Avg. ROI Delivered</div>
+          </div>
+          <div class="stat-card reveal fade-up delay-3">
+            <div class="stat-card__number">
+              <span class="count-num" data-count="100" data-suffix="%">0%</span>
+            </div>
+            <div class="stat-card__label">Client Retention</div>
+          </div>
+          <div class="stat-card reveal fade-up delay-4">
+            <div class="stat-card__number">
+              <span class="count-num" data-count="6">0</span>
+            </div>
+            <div class="stat-card__label">Core Services</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PROCESS ═══════════════════════════════ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-header centered reveal fade-up">
+      <span class="label-accent">How We Work</span>
+      <h2 class="display-md" style="margin-top:var(--space-md)">From Problem to Proof</h2>
+      <div class="divider-accent" style="margin:var(--space-lg) auto"></div>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal fade-up delay-1">
+        <div class="process-step__num">01</div>
+        <h4>Understand</h4>
+        <p>We audit your brand, audience, and market position to uncover real growth opportunities.</p>
+      </div>
+      <div class="process-step reveal fade-up delay-2">
+        <div class="process-step__num">02</div>
+        <h4>Strategise</h4>
+        <p>A custom roadmap aligned with your business objectives and measurable KPIs.</p>
+      </div>
+      <div class="process-step reveal fade-up delay-3">
+        <div class="process-step__num">03</div>
+        <h4>Execute</h4>
+        <p>High-quality content, campaigns, and assets deployed on time, every time.</p>
+      </div>
+      <div class="process-step reveal fade-up delay-4">
+        <div class="process-step__num">04</div>
+        <h4>Optimise</h4>
+        <p>Continuous iteration based on real data — performance improves every cycle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CASE STUDY ═══════════════════════════════ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-header reveal fade-up">
+      <span class="label-accent">Our Work</span>
+      <h2 class="display-md" style="margin-top:var(--space-md)">Results That Speak</h2>
+      <div class="divider-accent"></div>
+    </div>
+
+    <div class="case-card reveal scale-in">
+      <div>
+        <div class="case-card__tag">Healthcare · Digital Presence</div>
+        <h3>Healthy Being Bio Physio Therapy Center</h3>
+        <p style="color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:var(--space-xl)">
+          Dr. Arpita Shefali's clinic needed a strong digital presence, consistent content, and a strategy that attracted the right patients. We built it from the ground up.
+        </p>
+        <a href="case-studies.html" class="btn btn-primary">View Case Study →</a>
+      </div>
+      <div>
+        <div class="case-card__stats">
+          <div>
+            <div class="case-card__stat-num">3x</div>
+            <div class="case-card__stat-label">Organic Reach</div>
+          </div>
+          <div>
+            <div class="case-card__stat-num">↑85%</div>
+            <div class="case-card__stat-label">Engagement Rate</div>
+          </div>
+          <div>
+            <div class="case-card__stat-num">100%</div>
+            <div class="case-card__stat-label">Brand Consistency</div>
+          </div>
+        </div>
+        <p style="color:rgba(255,255,255,0.35);font-size:0.8rem;margin-top:var(--space-lg)">
+          Scope: Digital presence · Content creation · Marketing execution
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ TESTIMONIALS ═══════════════════════════════ -->
+<section class="section bg-secondary" id="testimonials">
+  <div class="container">
+    <div class="section-header centered reveal fade-up">
+      <span class="label-accent">Testimonials</span>
+      <h2 class="display-md" style="margin-top:var(--space-md)">What Clients Say</h2>
+      <div class="divider-accent" style="margin:var(--space-lg) auto"></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="testimonial-card reveal fade-up delay-1">
+        <p class="testimonial-card__text"><!-- REPLACE: Add real testimonial here --> "Working with Scalyex transformed how we show up online. The content quality and strategy are exactly what our clinic needed."</p>
+        <div class="testimonial-card__author">Dr. Arpita Shefali</div>
+        <div class="testimonial-card__role">Healthy Being Bio Physio Therapy Center</div>
+      </div>
+      <div class="testimonial-card reveal fade-up delay-2">
+        <p class="testimonial-card__text"><!-- REPLACE: Add real testimonial here --> "Professional, strategic, and results-focused. Scalyex doesn't just execute — they think about growth."</p>
+        <div class="testimonial-card__author">Client Name</div>
+        <div class="testimonial-card__role">Company · Replace with real</div>
+      </div>
+      <div class="testimonial-card reveal fade-up delay-3">
+        <p class="testimonial-card__text"><!-- REPLACE: Add real testimonial here --> "The team understood our brand goals immediately. Execution was seamless and results were measurable."</p>
+        <div class="testimonial-card__author">Client Name</div>
+        <div class="testimonial-card__role">Company · Replace with real</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CTA ═══════════════════════════════ -->
+<section class="cta-banner" id="cta">
+  <div class="container text-center">
+    <span class="label-accent reveal fade-up">Ready to Grow?</span>
+    <h2 class="display-lg reveal fade-up delay-1" style="color:#fff;margin-top:var(--space-md);margin-bottom:var(--space-lg)">
+      Let's Build Something<br><em style="font-style:normal;color:var(--accent)">That Scales.</em>
+    </h2>
+    <p class="reveal fade-up delay-2" style="color:rgba(255,255,255,0.5);max-width:440px;margin:0 auto var(--space-2xl)">
+      Book a free strategy call. No commitments — just clarity on how to grow your brand.
+    </p>
+    <div class="flex-center gap-lg flex-wrap reveal fade-up delay-3">
+      <a href="contact.html#contact-form" class="btn btn-primary btn-lg">Book a Call</a>
+      <a href="services.html" class="btn btn-lg" style="color:#fff;border:1.5px solid rgba(255,255,255,0.2)">View Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ NEWSLETTER ═══════════════════════════════ -->
+<section class="newsletter" id="newsletter">
+  <div class="container text-center">
+    <span class="label-accent reveal fade-up">Stay Updated</span>
+    <h3 class="display-sm reveal fade-up delay-1" style="margin-top:var(--space-md)">Get Marketing Insights, Monthly.</h3>
+    <p class="reveal fade-up delay-2" style="color:var(--text-secondary);margin-top:var(--space-sm)">No spam. Just actionable growth tips for your brand.</p>
+    <form class="newsletter__form reveal fade-up delay-3" action="mailto:hello@scalyex.com" method="GET" onsubmit="return false;" aria-label="Newsletter signup">
+      <input type="email" class="form-input" placeholder="your@email.com" aria-label="Email address" required />
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="index.html" class="nav__logo-link" aria-label="Scalyex - Home"><img src="assets/logo-dark.png" alt="Scalyex" class="footer__logo-img" /></a>
+        <p>A growth-focused marketing agency built to help brands scale with clarity, strategy, and measurable results.</p>
+        <p style="margin-top:var(--space-md);font-size:0.8rem;color:rgba(255,255,255,0.35)">Gurugram, Haryana – 122001, India</p>
+      </div>
+
+      <div class="footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Digital Strategy</a></li>
+          <li><a href="services.html">Social Media</a></li>
+          <li><a href="services.html">Content & Reels</a></li>
+          <li><a href="services.html">Performance Ads</a></li>
+          <li><a href="services.html">Branding</a></li>
+          <li><a href="services.html">Web Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="case-studies.html">Our Work</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@scalyex.com">hello@scalyex.com</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <!-- Phone: Add when available -->
+          <!-- WhatsApp: Add when available -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2025 Scalyex. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://instagram.com/scalyex" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <!-- Add Facebook, LinkedIn, YouTube when available -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/counter.js"></script>
+</body>
+</html>
