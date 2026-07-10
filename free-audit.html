@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free 15-Min Social Media Audit — Scalyex</title>
+  <meta name="description" content="Get a free 15-minute social media audit from Scalyex. We'll review your profiles, content, and give actionable growth recommendations — no obligation." />
+  <link rel="canonical" href="https://scalyex.com/free-audit.html" />
+  <meta property="og:url" content="https://scalyex.com/free-audit.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="js/site-config.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+<div class="progress-bar" aria-hidden="true"></div>
+<nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__logo-link"><img src="assets/logo-light.png" alt="Scalyex" class="nav__logo-img" /></a><ul class="nav__links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul><div class="nav__actions"><a href="contact.html#contact-form" class="btn btn-primary">Book a Call</a></div><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div></nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Free Audit</span></div>
+    <span class="label-accent">Free · No Obligation</span>
+    <h1 class="display-lg" style="margin-top:var(--space-md)">Free 15-Min<br><em style="font-style:normal;color:var(--accent)">Social Media Audit.</em></h1>
+    <p class="text-lg" style="color:var(--text-secondary);max-width:540px;margin-top:var(--space-lg)">We'll review your Instagram/social profiles and give you 3–5 actionable fixes you can implement immediately — whether you work with us or not.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:var(--space-3xl)">
+      <div class="reveal fade-left">
+        <h2 class="display-sm" style="margin-bottom:var(--space-xl)">What You'll Get</h2>
+        <ul style="display:flex;flex-direction:column;gap:var(--space-md)">
+          <li class="pricing-feature"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Profile &amp; bio optimisation review</li>
+          <li class="pricing-feature"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Content consistency &amp; quality check</li>
+          <li class="pricing-feature"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Top 3 growth opportunities identified</li>
+          <li class="pricing-feature"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Quick competitor snapshot</li>
+        </ul>
+        <p style="color:var(--text-secondary);margin-top:var(--space-xl);font-size:0.9rem">Delivered via WhatsApp voice note or 15-min call — your choice.</p>
+      </div>
+      <div class="reveal fade-right">
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:var(--space-2xl)">
+          <h3 style="margin-bottom:var(--space-xl)">Request Your Free Audit</h3>
+          <form id="audit-form">
+            <div class="form-group"><label class="form-label" for="audit-name">Full Name *</label><input type="text" id="audit-name" class="form-input" required placeholder="Your name" /></div>
+            <div class="form-group"><label class="form-label" for="audit-email">Email *</label><input type="email" id="audit-email" class="form-input" required placeholder="your@email.com" /></div>
+            <div class="form-group"><label class="form-label" for="audit-phone">WhatsApp *</label><input type="tel" id="audit-phone" class="form-input" required placeholder="+91 XXXXX XXXXX" /></div>
+            <div class="form-group"><label class="form-label" for="audit-handle">Instagram / Social Handle *</label><input type="text" id="audit-handle" class="form-input" required placeholder="@yourbrand" /></div>
+            <div class="form-group"><label class="form-label" for="audit-industry">Industry</label><select id="audit-industry" class="form-input"><option>Clinic / Healthcare</option><option>D2C / E-commerce</option><option>Personal Brand</option><option>Startup</option><option>Other</option></select></div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Get Free Audit →</button>
+          </form>
+          <div id="audit-success" style="display:none;text-align:center;padding:var(--space-xl)">
+            <h4>Request Received!</h4>
+            <p style="color:var(--text-secondary);margin-top:var(--space-sm)">Yaksh will review your profile and respond within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('audit-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  var btn = e.target.querySelector('button[type=submit]');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  try {
+    var res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: '18bb5f6b-1a5e-4d98-8274-b5822743b109',
+        subject: 'Free Audit Request — Scalyex',
+        from_name: 'Scalyex Free Audit',
+        name: document.getElementById('audit-name').value,
+        email: document.getElementById('audit-email').value,
+        phone: document.getElementById('audit-phone').value,
+        handle: document.getElementById('audit-handle').value,
+        industry: document.getElementById('audit-industry').value
+      })
+    });
+    var result = await res.json();
+    if (result.success) {
+      e.target.style.display = 'none';
+      document.getElementById('audit-success').style.display = 'block';
+    } else throw new Error();
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Get Free Audit →';
+    alert('Something went wrong. WhatsApp us at +91 92174 68479');
+  }
+});
+</script>
+<footer class="footer"><div class="container"><div class="footer__bottom" style="border:none"><p class="footer__copyright">© 2026 Scalyex · <a href="privacy-policy.html" style="color:rgba(255,255,255,0.4)">Privacy</a></p></div></div></footer>
+<script src="js/animations.js"></script>
+</body>
+</html>
