@@ -22,6 +22,14 @@
       To update pricing: change the text inside .pricing-card__price
       To add a feature: duplicate a .pricing-feature <li>
     */
+    /* Fix: .pricing-card__price span (meant only for the "/ month" unit text)
+       was also matching .price-amount, making the Growth card's price look
+       small and gray instead of big and bold like Starter/Scale. */
+    .pricing-card__price .price-amount {
+      font-size: 1em;
+      color: inherit;
+      font-weight: inherit;
+    }
   </style>
 </head>
 <body>
@@ -316,7 +324,6 @@
             <div class="sp-card__name">Setup + 4 Campaigns / month</div>
             <div class="sp-card__price">₹4,500 <span>/ month</span></div>
             <div class="sp-card__includes">Broadcast setup · Campaign copywriting · Scheduling &amp; delivery · Monthly report</div>
-            <div class="sp-card__note">WhatsApp API &amp; per-message charges are separate (approx ₹1–2 per message)</div>
           </div>
         </div>
       </div>
